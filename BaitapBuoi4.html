@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <style>
+    * {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main {
+    background-color: purple;
+    padding-bottom: 25px;
+}
+
+main .main_item div img {
+    width:100%; 
+    border: solid 3px white;
+}
+
+main .main_item div p {
+    color: white;
+    font-size:20px ;
+    margin-top: 15px;
+}
+
+main .main_item div {
+    width: 30%;
+}
+
+main .main_item {
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: space-between;
+}
+main h3 {
+    margin-left: 5%;
+    padding-top: 25px;
+    color: white;
+    font-size:30px ;
+    padding-bottom: 25px;
+}
+
+@media screen and (max-width:992px) {
+    main h3 {
+        text-align: center;
+    }
+    
+    main .main_item {
+       flex-direction: column;
+    }   
+
+    main .main_item div {
+        width: 100%;
+    }
+    main .main_item div p {
+       padding-bottom: 15px;
+    }
+}
+footer button {
+    background-color: aquamarine;
+    width: 90px;
+    height: 50px;
+    margin-top: 10px;
+}
+   </style>
+</head>
+<body>
+        <h3>Bão mạng</h3>
+        <div class="main_item">
+            <div>
+                <img src="https://newsmd2fr.keeng.vn/tiin/archive/imageslead/2022/10/04/90_53ae1fd09d434a9ad86fd745df2d6b2f.jpg" alt="">
+                <p>Vụ mẹ và bé 3 tháng tuối rơi từ tầng 12 chung cư tử vong: Cảnh sát đạt nghi vấn do trầm cảm</p>
+            </div>
+
+            <div>
+                <img src="http://image.congan.com.vn/thumbnail/CATP-480-2022-10-2/z3767682694065-b5cd403a59174b93cb07b5f2c26bd3f0_956_1276_398.jpg" alt="">
+                <p>MXH khen ngợi anh CSGT áo dính đầy máu khi đưa cô gái bị tai nạn đi cấp cứu</p>
+            </div>
+
+            <div>
+                <img src="https://img.cand.com.vn/resize/800x800/NewFiles/Images/2022/09/24/binh_phuoc-1664017141561.jpg" alt="">
+                <p>Lại xuất hiện clip chốt bán đất nhanh như chớp xôn xao mạng</p>
+            </div>
+        </div>
+</body>    
+</html>
