@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài kiểm tra 30%</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+    color: black;
+}
+
+html{
+    font-size: 16px;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 0;
+}
+
+.inner{
+    padding: 10px 50px;
+
+}
+
+.container{
+    width: 100%;
+    background-image: url(gray-textured-wall.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.nav{
+    width: 100%;
+    align-items: center;
+    position: relative;
+    justify-content: flex-end;
+    padding: 0 30px;
+
+}
+
+.menu{
+    width: 55%;
+    padding: 15px 0;
+}
+
+ul{
+    list-style: none;
+    align-items: center;
+
+}
+
+ul li{ 
+    font-size: 1.2 rem;
+}
+
+li:hover{
+    border-bottom: 2px solid #fff;
+    transition: .5;
+    cursor: pointer;
+}
+
+.nav-btn{
+    border: none;
+    border-radius: 40px;
+    color: black;
+    padding: 5px 20px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.search {
+    color: black;
+    margin-right: 10px;
+}
+
+.toggle-btn {
+    display: none;
+    font-size: 30px;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+.banner {
+    padding: 100px 50px 50px 50px;
+}
+
+.logo{
+    width: 180px;
+}
+
+.three-section {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 10px;
+}
+
+.three-section {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 100px 10px;
+}
+
+.three-section h2, .three-section p{
+    color: black;
+
+}
+
+.heading{
+    width: 100%;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.heading h1{
+    text-transform: capitalize;
+    color:black;
+    font-family: 'Dancing Script';
+    font-size: 7rem;
+    padding-left: 20px;
+}
+
+.heading p{
+    font-size: 1.4rem;
+    margin-top: 25px;
+    letter-spacing: 2px;
+    padding-left:20px;
+}
+
+.dia1 {
+    width: 100%;
+}
+
+.box {
+    width: 28%;
+    margin-top: 30px;
+}
+
+.box h2 {
+     font-size: 2rem;
+     margin: 15px 0;
+}
+
+.box p{
+    font-size: 1.4rem;
+}
+
+.bottom-btn {
+    width: 100%;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.b-btn{
+    border: none;
+    background-color: black;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    padding: 10px 45px;
+    border-radius: 40px;
+}
+
+.b-btn:hover {
+    background-color: pink; 
+    color: rgb(0, 0, 0);
+}
+
+.box3 {
+    width: 100%;
+    min-height: 420px;
+    background-color: rgb(61, 59, 59);
+}
+
+.box3ch {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    justify-content: space-between;
+}
+
+#hbox3 {
+    color: rgb(255, 255, 255);
+    font-size: 60px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 40px;
+}
+
+#p1box3 {
+    color: white;
+    font-size: 20px;
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-left: 100px;
+}
+
+.nutbox3 {
+    width: 17%;
+    height: 55px;
+    background-color: rgb(0, 0, 0);
+    margin-left: 42.5%;
+    margin-right: 42.5%;
+    border-radius: 25px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 55px;
+    font-size: 20px;
+}
+.nutbox3:hover {
+    background-color: pink; 
+    color: rgb(0, 0, 0);
+}
+
+.box4 {
+    width: 100%;
+    min-height: 900px;
+}
+
+.box4_1 {
+    display: flex;
+    width: 100%;
+    height: 420px;
+    margin-bottom: 10px;
+}
+
+.anhbox4 {
+    width: 40%;
+    height: 350px;
+    margin-top: 50px;
+
+}
+
+.anhbox4 img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    margin-left: 200px;
+}
+
+.ndbox4 {
+    width: 50%;
+    height: 350px;
+    margin-top: 50px;
+}
+
+#h1box4 {
+    color: rgb(0, 0, 0);
+    font-size: 33px;
+    box-sizing: border-box;
+    padding-top: 30px;
+}
+
+#p1box4 {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+
+.ndbox4nut {
+    width: 27%;
+    height: 50px;
+    background-color: black;
+    margin-top: 40px;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.ndbox41 {
+    width: 50%;
+    height: 350px;
+    margin-top: 50px;
+}
+
+#h1box41 {
+    color: rgb(0, 0, 0);
+    font-size: 33px;
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-left: 370px;
+}
+
+.ndbox4nut:hover {
+    background-color: pink;
+    color: black;
+}
+
+#p1box41 {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-left: 370px;
+}
+
+.ndbox4nut1 {
+    width: 27%;
+    height: 50px;
+    background-color: black;
+    margin-top: 40px;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    margin-left: 370px;
+}
+
+.ndbox4nut1:hover {
+    background-color:pink;
+    color: black;
+}
+
+.anhbox41 {
+    width: 40%;
+    height: 350px;
+    margin-top: 50px;
+}
+
+.anhbox41 img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.box5 {
+    width: 100%;
+    min-height: 650px;
+    background-image: url(gray-textured-wall.jpg);
+    background-size: cover;
+}
+
+.box5img{
+    width: 100%;
+    height: 250px;
+    background-image: url(laa.png);
+    background-size: cover;
+}
+
+#box5pp {
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    box-sizing: border-box;
+    padding-top: 50px;
+    padding-left: 30px;
+    text-align: center;
+}
+
+#box5ppp {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-left: 30px;
+    text-align: center;
+}
+
+.box5piza {
+    width: 60%;
+    height: 700px;
+    margin-left: 30%;
+    background-image: url(pizza.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.box6 {
+    width: 100%;
+    min-height: 550px;
+}
+
+.box6_1 {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    justify-content: space-between;
+}
+
+.box6chu {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 30%;
+    height: 300px;
+}
+
+#box6h {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-left: 30px;
+    text-align: center;
+}
+
+#box6p {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-left: 30px;
+    text-align: center;
+}
+
+#box6_2p {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-left: 30px;
+    text-align: center;
+}
+
+#box6_2 {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    box-sizing: border-box;
+    padding-top: 30px;
+    padding-left: 30px;
+    text-align: center;
+}
+
+.box7 {
+    width: 100%;
+    min-height: 650px;
+    background-image: url(laa.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    text-align: center;
+   
+}
+
+.nut1 {
+    width: 620px;
+    height: 45px;
+    background-color: white;
+    margin-left: 430px;
+    margin-top: 50px;
+    border-radius: 25px;
+    box-sizing: border-box;
+    color: rgb(61, 59, 59);
+    padding: 14px;
+    font-size: 17px;
+}
+
+.nut2 {
+    height: 45px; 
+    width: 170px;
+    background-color: rgb(100, 96, 96);
+    border-radius: 25px;
+    margin-left: 440px; 
+    margin-top: -34px; 
+    line-height: 45px;
+    box-sizing: border-box;
+    padding-left: 40px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.nut2:hover {
+    background-color: pink; 
+    color: rgb(0, 0, 0);
+}
+
+.box8 {
+    width: 100%;
+    min-height: 530px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+
+.kt1 {
+    margin-left: 20px;
+    width: 25%;
+    height: 350px;
+}
+
+.kt2 {
+    margin-left: 20px;
+    width: 23%;
+    height: 350px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.kt2 a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    position: relative;
+}
+
+.kt2 a:hover {
+    text-decoration: underline;
+    position: relative;
+    overflow: hidden;
+    text-underline-offset: 5px;
+}
+
+#hkt {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+
+#pkt {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+
+#kt2p {
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-left: 40px;
+}
+
+.kt2 ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    
+}
+
+.kt2 li {
+    padding-top: 20px;
+    margin-left: 15px;
+    margin-right: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-decoration: none;
+    padding-left: 30px;
+    
+}
+
+.kt2 a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="nav flex"></div>
+          <div class="menu" id="menus">
+               <ul class="flex">
+                 <li>HOME</li>
+                 <li>MENU</li>
+                 <li>OUR STORY</li>
+                 <li>CONTACT US</li>
+                  <div class="nav-btn"><span class="fa fa-search search"></span>Search</div>
+               </ul>
+          </div>
+
+       <span class="toggle-btn" onclick="toggle()">&</span>
+       </div>
+
+       <div class="banner inner flex">
+          <div class="left">
+            <img src="logo.png" class="logo">
+            <h1> Italian Food </h1>
+            <h2> Earth to People</h2>
+            <button class="btn">Read More</button>
+            <p> Earth to people is our expression of gratitude to these ingredients, from their origin, their growers, our chefs and lasty to our guests.</p>
+          </div>
+          <div class="right">
+            <img src="banner.png">
+          </div>
+       </div>
+    </div>
+
+    <div class="three-section">
+        <div class="heading">
+            <h1>Pasta</h1>
+            <p>Mỳ Ý</p>
+        </div>
+
+        <div class="three-box inner flex">
+            <div class="box">
+                <img src="dia1.png" class="img1" />
+                <h2>Salmon Cream House-made Fettuccine</h2>
+                <p>Mì Fettuccine nhà làm kèm xốt kem cá hồi</p>
+            </div>
+            <div class="box">
+                <img src="dia2.png" class="img1">
+                <h2>Clam & Basil Sauce Spaghetti</h2>
+                <p>Mì Ý nghêu và xốt quế Tây</p>
+            </div>
+            <div class="box">
+                <img src="dia3.png" class="img1">
+                <h2>Tomato Spaghetti with Mascarpone Cheese & Mushroom</h2>
+                <p>Mì Ý sốt cà chua với phô mai Mascarpone & nấm</p>
+            </div>
+        </div>
+
+        <div class="bottom-btn">
+            <button class="b-btn">Show More</button>
+        </div>
+    </div>
+
+    <div class="box3">
+        <h1 style="text-align: center; color:white">Party Plan </h1>
+        <div class="box3ch">
+            <div class="ch1">
+                <p id="p1box3">
+                    Prepare to transform your happy moments into unforgettable memories! <br>
+                    At Italian Food, we know the art of celebrating cherished moments with your closest friends.<br>
+                    That is why we have whipped up an exclusive party plan just for you.<br>
+                    Our specially curated menus are tailor-made to match your celebration and<br>
+                    group size, ensuring your festivity is filled with delicious food and delightful drinks. <br>
+                </p>
+            </div>
+            <div class="ch1">
+                <p id="p1box3">
+                    Whether its a family get-together, an office bash, or simply spreading joy<br>
+                    with your tight-knit group, our customizable packages promise an extraordinary<br>
+                    experience. Come and join the fun as we take your festivities to the next level<br>
+                    with our “oooh-my” dishes and tantalizing drinks, adding that extra sparkle to<br>
+                    your special moments. Let the good time roll with Italian Food!<br>
+
+                </p>
+            </div>
+        </div>
+        <div class="nutbox3">MORE INFO</div>
+    </div>
+    <div class="box4">
+        <div class="box4_1">
+            <div class="anhbox4">
+                <img src="dia3.png">
+            </div>
+            <div class="ndbox4">
+                <h1 id="h1box4">Discount up to <br>
+                    50% All Excursions</h1>
+                <p id="p1box4">- Advance booking is required at least 48 hours in advance.<br>
+                    - Cancellations or changes must be made at least 24 hours in advance<br></p>
+                <div class="ndbox4nut">READ MORE</div>
+            </div>
+        </div>
+        <div class="box4_1">
+            <div class="ndbox41">
+                <h1 id="h1box41">Discount up to <br>
+                    50% All Excursions</h1>
+                <p id="p1box41">- The Party Plan is applicable only when<br>
+                     the group consists of a minimum of 4 persons, and<br>
+                      the participants are 4 years or older<br>
+
+                    - Prices listed below include VAT <br></p>
+                <div class="ndbox4nut1">READ MORE</div>
+            </div>
+            <div class="anhbox41">
+                <img src="dia2.png">
+            </div>
+        </div>
+    </div>
+    <div class="box5">
+        <div class="box5img">
+            <h1 id="box5pp">MENU</h1>
+            <p id="box5ppp">~ Pizza ~</p>
+        </div>
+        <div class="box5piza">
+
+        </div>
+    </div>
+
+    <div class="box6">
+        <div class="box6_1">
+            <div class="box6chu">
+                <h1 id="box6h">Salmon Miso Cream Pizza</h1>
+                <p id="box6p">Pizza Cá hồi xốt kem Miso</p>
+            </div>
+            <div class="box6chu">
+                <h1 id="box6h">Shrimp Mayonnaise Pizza</h1>
+                <p id="box6p">Pizza Tôm và xốt Mayonnaise</p>
+            </div>
+            <div class="box6chu">
+                <h1 id="box6h">Soy Garlic Beef Pizza</h1>
+                <p id="box6p">Pizza Bò với dầu tỏi</p>
+            </div>
+        </div>
+        <p id="box6_2p">Let us awaken our senses and explore the “fusion” style found in some of the pizzas listed below:</p>
+        <p id="box6_2">• Bo kho/Bo sot vang Pizza<br>
+            • Indian Chicken Curry Pizza<br>
+            • Spicy Beef Kebab Pizza<br>
+            • Teriyaki Chicken Pizza<br>
+            • Salmon Sashimi Pizza</p>
+    </div>
+
+    <div class="box7">
+        <h1>FREE FLOW DRINK FOR PARTY PLAN</h1>
+        <p>This package will be applied to all guests</p>
+        <div class="nut1">
+            Your Email
+        <div class="nut2">SUBSCRIBE</div>
+        </div>
+    </div>
+    <div class="box8">
+        <div class="kt1">
+            <h1 id="hkt">Hotline:</h1>
+            <p id="pkt">> Domestic number: 1900 6043 (09:00 – 22:00)<br>
+                > International number: (+84) 2836220500 (09:00 – 22:00)<br>
+                Facebook Messenger, or Email: info@italianfood.com
+             </p>
+        </div>
+        <div class="kt2">
+            <p id="kt2p">About</p>
+            <ul>
+                <li><a href="">History</a></li>
+                <li><a href="">Our Team</a></li>
+                <li><a href="">Brand Guidelines</a></li>
+                <li><a href="">Terms & Condition</a></li>
+                <li><a href="">Privacy Policy</a></li>
+            </ul>
+        </div>
+        <div class="kt2">
+            <p id="kt2p">Services</p>
+            <ul>
+                <li><a href="">How to Order</a></li>
+                <li><a href="">Our Product</a></li>
+                <li><a href="">Order Status</a></li>
+                <li><a href="">Promo</a></li>
+                <li><a href="">Payment Method</a></li>
+            </ul>
+        </div>
+        <div class="kt2">
+            <p id="kt2p">Other</p>
+            <ul>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Help</a></li>
+                <li><a href="">Privacy</a></li>
+            </ul>
+        </div>
+    </div>
+    </div>
+</body>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
