@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        form {
+            text-align: left;
+            width: 500px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+    <title>Form Đăng Ký</title>
+</head>
+<body>
+    <form action="#" method="post">
+        <h2>FORM ĐĂNG KÝ</h2>
+        <label for="ho">Họ:</label>
+        <input type="text" id="ho" name="ho" required>
+
+        <label for="ten">Tên:</label>
+        <input type="text" id="ten" name="ten" required>
+
+        <label>Ngày sinh:</label>
+        <select id="Ngày">
+                <option value="1"> 1 </option>
+                <option value="1"> 2 </option>
+                <option value="1"> 3 </option>
+                <option value="1"> 4 </option>
+                <option value="1"> 5 </option>
+                <option value="1"> 6 </option>
+                <option value="1"> 7 </option>
+                <option value="1"> 8 </option>
+                <option value="1"> 9 </option>
+                <option value="1"> 10 </option>
+                <option value="1"> 11 </option>
+                <option value="1"> 12 </option>
+                <option value="1"> 13 </option>
+                <option value="1"> 14 </option>
+                <option value="1"> 15 </option>
+                <option value="1"> 16 </option>
+                <option value="1"> 17 </option>
+                <option value="1"> 18 </option>
+                <option value="1"> 19 </option>
+                <option value="1"> 20 </option>
+                <option value="1"> 21 </option>
+                <option value="1"> 22 </option>
+                <option value="1"> 23 </option>
+                <option value="1"> 24 </option>
+                <option value="1"> 25 </option>
+                <option value="1"> 26 </option>
+                <option value="1"> 27 </option>
+                <option value="1"> 28 </option>
+                <option value="1"> 29 </option>
+                <option value="1"> 30 </option>
+                <option value="1"> 31 </option>
+            
+            
+            
+        </select>
+
+        <select id="Tháng">
+            <option value="1"> 1 </option>
+            <option value="1"> 2 </option>
+            <option value="1"> 3 </option>
+            <option value="1"> 4 </option>
+            <option value="1"> 5 </option>
+            <option value="1"> 6 </option>
+            <option value="1"> 7 </option>
+            <option value="1"> 8 </option>
+            <option value="1"> 9 </option>
+            <option value="1"> 10 </option>
+            <option value="1"> 11 </option>
+            <option value="1"> 12 </option>
+        </select>
+
+        <select id="Năm" name="Năm">
+            <option value="1"> 1990 </option>
+            <option value="1"> 1991 </option>
+            <option value="1"> 1992 </option>
+            <option value="1"> 1993 </option>
+            <option value="1"> 1994 </option>
+            <option value="1"> 1995 </option>
+            <option value="1"> 1996 </option>
+            <option value="1"> 1997 </option> 
+            <option value="1"> 1998 </option>
+            <option value="1"> 1999 </option>
+            <option value="1"> 2000 </option>
+            <option value="1"> 2001 </option>
+            <option value="1"> 2002 </option>
+            <option value="1"> 2003 </option>
+            <option value="1"> 2004 </option>
+            <option value="1"> 2005 </option>
+            <option value="1"> 2006 </option>
+            <option value="1"> 2007 </option>
+            <option value="1"> 2008 </option>
+            <option value="1"> 2009 </option>
+            <option value="1"> 2010 </option>
+            <option value="1"> 2011 </option>
+            <option value="1"> 2012 </option>
+            <option value="1"> 2013 </option>
+            <option value="1"> 2014 </option>
+            <option value="1"> 2015 </option>
+            <option value="1"> 2016 </option>
+            <option value="1"> 2017 </option>
+            <option value="1"> 2018 </option> T  0
+            <option value="1"> 2019 </option>
+            <option value="1"> 2020 </option>      
+        </select><br>
+
+        <p>Giới tính: </p>
+                <input type="radio" name="gioitinh" value="nam"> Nam
+                <input type="radio" name="gioitinh" value="nu"> Nữ
+    
+        <label for="sodienthoai">Số điện thoại:</label>
+        <input type="text" id="sodienthoai" name="sodienthoai" pattern="\d{10}" required>
+
+        <p>Sở thích:</p>
+        <input type="checkbox" value="Đọc sách" name="rdSothich" /> Đọc sách
+        <input type="checkbox" value="Xem phim" name="rdSothich" /> Xem phim
+        <input type="checkbox" value="Nghe nhạc" name="rdSothich" /> Nghe nhạc
+        <input type="checkbox" value="Đá bóng" name="rdSothich" /> Đá bóng
+
+
+        <label for="khac">Khác:</label>
+        <input type="text" id="khac" name="khac">
+
+        <br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
