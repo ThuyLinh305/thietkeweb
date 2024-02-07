@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="60%.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />" 
+    <style>
+    body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+    .row-padding img {margin-bottom: 12px}
+    .sidebar {width: 120px;background:rgb(255, 255, 255);}
+    html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}  background
+audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
+audio:not([controls]){display:none;height:0}[hidden],template{display:none}
+a{background-color:transparent}a:active,a:hover{outline-width:0}
+abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+b,strong{font-weight:bolder}dfn{font-style:italic}mark{background:#ff0;color:#00eff3}
+small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}img{border-style:none}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}hr{box-sizing:content-box;height:0;overflow:visible}
+button,input,select,textarea,optgroup{font:inherit;margin:0}optgroup{font-weight:bold}
+button,input{overflow:visible}button,select{text-transform:none}
+button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button}
+button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}
+button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
+legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}
+[type=checkbox],[type=radio]{padding:0}
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
+[type=search]{-webkit-appearance:textfield;outline-offset:-2px}
+[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+html,body{font-family:Verdana,sans-serif;font-size:15px;line-height:1.5}html{overflow-x:hidden}
+h1{font-size:36px}h2{font-size:30px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}
+.serif{font-family:serif}.sans-serif{font-family:sans-serif}.cursive{font-family:cursive}.monospace{font-family:monospace}
+h1,h2,h3,h4,h5,h6{font-family:"Segoe UI",Arial,sans-serif;font-weight:400;margin:10px 0}.wide{letter-spacing:4px}
+hr{border:0;border-top:1px solid #eee;margin:20px 0}
+.image{max-width:100%;height:auto}img{vertical-align:middle}a{color:inherit}
+.table,.table-all{border-collapse:collapse;border-spacing:0;width:100%;display:table}.table-all{border:1px solid #ccc}
+.bordered tr,.table-all tr{border-bottom:1px solid #ddd}.striped tbody tr:nth-child(even){background-color:#f1f1f1}
+.table-all tr:nth-child(odd){background-color:#fff}.table-all tr:nth-child(even){background-color:#f1f1f1}
+.hoverable tbody tr:hover,.ul.hoverable li:hover{background-color:#ccc}.centered tr th,.centered tr td{text-align:center}
+.table td,.table th,.table-all td,.table-all th{padding:8px 8px;display:table-cell;text-align:left;vertical-align:top}
+.table th:first-child,.table td:first-child,.table-all th:first-child,.table-all td:first-child{padding-left:16px}
+.btn,.button{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:inherit;text-align:center;cursor:pointer;white-space:nowrap}
+.btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
+.btn,.button{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
+.disabled,.btn:disabled,.button:disabled{cursor:not-allowed;opacity:0.3}.disabled *,:disabled *{pointer-events:none}
+.btn.disabled:hover,.btn:disabled:hover{box-shadow:none}
+.badge,.tag{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}.badge{border-radius:50%}
+.ul{list-style-type:none;padding:0;margin:0}.ul li{padding:8px 16px;border-bottom:1px solid #ddd}.ul li:last-child{border-bottom:none}
+.tooltip,.display-container{position:relative}.tooltip .text{display:none}.tooltip:hover .text{display:inline-block}
+.ripple:active{opacity:0.5}.ripple{transition:opacity 0s}
+.input{padding:8px;display:block;border:none;border-bottom:1px solid #ccc;width:100%}
+.select{padding:9px 0;width:100%;border:none;border-bottom:1px solid #ccc}
+.dropdown-click,.dropdown-hover{position:relative;display:inline-block;cursor:pointer}
+.dropdown-hover:hover .dropdown-content{display:block}
+.dropdown-hover:first-child,.dropdown-click:hover{background-color:#ccc;color:#000}
+.dropdown-hover:hover > .button:first-child,.dropdown-click:hover > .button:first-child{background-color:#ccc;color:#000}
+.dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0;z-index:1}
+.check,.radio{width:24px;height:24px;position:relative;top:6px}
+.sidebar{height:100%;width:200px;background-color:#fff;position:fixed!important;z-index:1;overflow:auto}
+.bar-block .dropdown-hover,.bar-block .dropdown-click{width:100%}
+.bar-block .dropdown-hover .dropdown-content,.bar-block .dropdown-click .dropdown-content{min-width:100%}
+.bar-block .dropdown-hover .button,.bar-block .dropdown-click .button{width:100%;text-align:left;padding:8px 16px}
+.main,#main{transition:margin-left .4s}
+.modal{z-index:3;display:none;padding-top:100px;position:fixed;left:0;top:0;width:100%;height:100%;overflow:auto;background-color:rgb(0,0,0);background-color:rgba(0,0,0,0.4)}
+.modal-content{margin:auto;background-color:#fff;position:relative;padding:0;outline:0;width:600px}
+.bar{width:100%;overflow:hidden}.center .bar{display:inline-block;width:auto}
+.bar .bar-item{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0}
+.bar .dropdown-hover,.bar .dropdown-click{position:static;float:left}
+.bar .button{white-space:normal}
+.bar-block .bar-item{width:100%;display:block;padding:8px 16px;text-align:left;border:none;white-space:normal;float:none;outline:0}
+.bar-block.center .bar-item{text-align:center}.block{display:block;width:100%}
+.responsive{display:block;overflow-x:auto}
+.container:after,.container:before,.panel:after,.panel:before,.row:after,.row:before,.row-padding:after,.row-padding:before,
+.cell-row:before,.cell-row:after,.clear:after,.clear:before,.bar:before,.bar:after{content:"";display:table;clear:both}
+.col,.half,.third,.twothird,.threequarter,.quarter{float:left;width:100%}
+.col.s1{width:8.33333%}.col.s2{width:16.66666%}.col.s3{width:24.99999%}.col.s4{width:33.33333%}
+.col.s5{width:41.66666%}.col.s6{width:49.99999%}.col.s7{width:58.33333%}.col.s8{width:66.66666%}
+.col.s9{width:74.99999%}.col.s10{width:83.33333%}.col.s11{width:91.66666%}.col.s12{width:99.99999%}
+@media (min-width:601px){.col.m1{width:8.33333%}.col.m2{width:16.66666%}.col.m3,.quarter{width:24.99999%}.col.m4,.third{width:33.33333%}
+.col.m5{width:41.66666%}.col.m6,.half{width:49.99999%}.col.m7{width:58.33333%}.col.m8,.twothird{width:66.66666%}
+.col.m9,.threequarter{width:74.99999%}.col.m10{width:83.33333%}.col.m11{width:91.66666%}.col.m12{width:99.99999%}}
+@media (min-width:993px){.col.l1{width:8.33333%}.col.l2{width:16.66666%}.col.l3{width:24.99999%}.col.l4{width:33.33333%}
+.col.l5{width:41.66666%}.col.l6{width:49.99999%}.col.l7{width:58.33333%}.col.l8{width:66.66666%}
+.col.l9{width:74.99999%}.col.l10{width:83.33333%}.col.l11{width:91.66666%}.col.l12{width:99.99999%}}
+.rest{overflow:hidden} .stretch{margin-left:-16px;margin-right:-16px}
+.content,.auto{margin-left:auto;margin-right:auto}.content{max-width:980px}.auto{max-width:1140px} 
+.cell-row{display:table;width:100%}.cell{display:table-cell}
+.cell-top{vertical-align:top}.cell-middle{vertical-align:middle}.cell-bottom{vertical-align:bottom}
+.hide{display:none!important}.show-block,.show{display:block!important}.show-inline-block{display:inline-block!important}
+@media (max-width:1205px){.auto{max-width:95%}}
+@media (max-width:600px){.modal-content{margin:0 10px;width:auto!important}.modal{padding-top:30px}
+.dropdown-hover.mobile .dropdown-content,.dropdown-click.mobile .dropdown-content{position:relative}	
+.hide-small{display:none!important}.mobile{display:block;width:100%!important}.bar-item.mobile,.dropdown-hover.mobile,.dropdown-click.mobile{text-align:center}
+.dropdown-hover.mobile,.dropdown-hover.mobile .btn,.dropdown-hover.mobile .button,.dropdown-click.mobile,.dropdown-click.mobile .btn,.dropdown-click.mobile .button{width:100%}}
+@media (max-width:768px){.modal-content{width:500px}.modal{padding-top:50px}}
+@media (min-width:993px){.modal-content{width:900px}.hide-large{display:none!important}.sidebar.collapse{display:block!important}}
+@media (max-width:992px) and (min-width:601px){.hide-medium{display:none!important}}
+@media (max-width:992px){.sidebar.collapse{display:none}.main{margin-left:0!important;margin-right:0!important}.auto{max-width:100%}}
+.top,.bottom{position:fixed;width:100%;z-index:1}.top{top:0}.bottom{bottom:0}
+.overlay{position:fixed;display:none;width:100%;height:100%;top:0;left:0;right:0;bottom:0;background-color:rgba(0,0,0,0.5);z-index:2}
+.display-topleft{position:absolute;left:0;top:0}.display-topright{position:absolute;right:0;top:0}
+.display-bottomleft{position:absolute;left:0;bottom:0}.display-bottomright{position:absolute;right:0;bottom:0}
+.display-middle{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%)}
+.display-left{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.display-right{position:absolute;top:50%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+.display-topmiddle{position:absolute;left:50%;top:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+.display-container:hover .display-hover{display:block}.display-container:hover span.display-hover{display:inline-block}.display-hover{display:none}
+.display-position{position:absolute}
+.circle{border-radius:50%}
+.round-small{border-radius:2px}.round,.round-medium{border-radius:4px}.round-large{border-radius:8px}.round-xlarge{border-radius:16px}.round-xxlarge{border-radius:32px}
+.row-padding,.row-padding>.half,.row-padding>.third,.row-padding>.twothird,.row-padding>.threequarter,.row-padding>.quarter,.row-padding>.col{padding:0 8px}
+.container,.panel{padding:0.01em 16px}.panel{margin-top:16px;margin-bottom:16px}
+.code,.codespan{font-family:Consolas,"courier new";font-size:16px}
+.code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
+.codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
+.card,.card-2{box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)}
+.card-4,.hover-shadow:hover{box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19)}
+.spin{animation:spin 2s infinite linear}@keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(359deg)}}
+.animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+.animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
+.animate-top{position:relative;animation:animatetop 0.4s}@keyframes animatetop{from{top:-300px;opacity:0} to{top:0;opacity:1}}
+.animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
+.animate-right{position:relative;animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+.animate-bottom{position:relative;animation:animatebottom 0.4s}@keyframes animatebottom{from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}}
+.animate-zoom {animation:animatezoom 0.6s}@keyframes animatezoom{from{transform:scale(0)} to{transform:scale(1)}}
+.animate-input{transition:width 0.4s ease-in-out}.animate-input:focus{width:100%!important}
+.opacity,.hover-opacity:hover{opacity:0.60}.opacity-off,.hover-opacity-off:hover{opacity:1}
+.opacity-max{opacity:0.25}.opacity-min{opacity:0.75}
+.greyscale-max,.grayscale-max,.hover-greyscale:hover,.hover-grayscale:hover{filter:grayscale(100%)}
+.greyscale,.grayscale{filter:grayscale(75%)}.greyscale-min,.grayscale-min{filter:grayscale(50%)}
+.sepia{filter:sepia(75%)}.sepia-max,.hover-sepia:hover{filter:sepia(100%)}.sepia-min{filter:sepia(50%)}
+.tiny{font-size:10px!important}.small{font-size:12px!important}.medium{font-size:15px!important}.large{font-size:18px!important}
+.xlarge{font-size:24px!important}.xxlarge{font-size:36px!important}.xxxlarge{font-size:48px!important}.jumbo{font-size:64px!important}
+.left-align{text-align:left!important}.right-align{text-align:right!important}.justify{text-align:justify!important}.center{text-align:center!important}
+.border-0{border:0!important}.border{border:1px solid #ccc!important}
+.border-top{border-top:1px solid #ccc!important}.border-bottom{border-bottom:1px solid #ccc!important}
+.border-left{border-left:1px solid #ccc!important}.border-right{border-right:1px solid #ccc!important}
+.topbar{border-top:6px solid #ccc!important}.bottombar{border-bottom:6px solid #ccc!important}
+.leftbar{border-left:6px solid #ccc!important}.rightbar{border-right:6px solid #ccc!important}
+.section,.code{margin-top:16px!important;margin-bottom:16px!important}
+.margin{margin:16px!important}.margin-top{margin-top:16px!important}.margin-bottom{margin-bottom:16px!important}
+.margin-left{margin-left:16px!important}.margin-right{margin-right:16px!important}
+.padding-small{padding:4px 8px!important}.padding{padding:8px 16px!important}.padding-large{padding:12px 24px!important}
+.padding-16{padding-top:16px!important;padding-bottom:16px!important}.padding-24{padding-top:24px!important;padding-bottom:24px!important}
+.padding-32{padding-top:32px!important;padding-bottom:32px!important}.padding-48{padding-top:48px!important;padding-bottom:48px!important}
+.padding-64{padding-top:64px!important;padding-bottom:64px!important}
+.padding-top-64{padding-top:64px!important}.padding-top-48{padding-top:48px!important}
+.padding-top-32{padding-top:32px!important}.padding-top-24{padding-top:24px!important}
+.left{float:left!important}.right{float:right!important}
+.button:hover{color:#000!important;background-color:#ccc!important}
+.transparent,.hover-none:hover{background-color:transparent!important}
+.hover-none:hover{box-shadow:none!important}
+    #main {margin-left: 120px}
+    @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+        .progress-container {
+            display: flex;
+        }
+
+        .progress-circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: conic-gradient(rgb(13, 202, 236) 0%, rgb(233, 74, 220) var(--percent) 0%, transparent var(--percent) 100%, transparent 100%);
+            margin: 0 20px;
+        }
+
+        [data-percent="70"] {
+            --percent: 70%;
+        }
+
+        [data-percent="85"] {
+            --percent: 85%;
+        }
+
+        [data-percent="65"] {
+            --percent: 65%;
+        }
+
+        #text-container {
+            font-size: 70px;
+            white-space: nowrap;
+            overflow: hidden;
+            color: rgb(0, 221, 255)
+        }
+
+        .container-fb {
+            display: flex;
+            align-items: center;
+        }
+
+        .image-fb {
+            flex: 1;
+            order: 2; 
+            max-width: 50%;
+            height: auto;
+        }
+
+        .title-fb {
+            flex: 1;
+            order: 1; 
+            padding: 20px;
+        }
+
+        .image-fb1 {
+            flex: 1;
+            order: 1; 
+            max-width: 50%;
+            height: auto;
+        }
+
+        .title-fb1 {
+            flex: 1;
+            order: 2; 
+            padding: 20px;
+        }
+    </style>
+  </head>
+<body class="black">
+
+<nav class="sidebar bar-block small hide-small center">
+  <a href="#" class="bar-item button padding-large black">
+    <i class="fa fa-home xxlarge" ></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="bar-item button padding-large black hover-yellow">
+    <i class="fa fa-user xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#work" class="bar-item button padding-large black hover-grey">
+    <i class="fa-solid fa-briefcase xxlarge"></i>
+    <p>WORK</p>
+  </a>
+  <a href="#contact" class="bar-item button padding-large black hover-yellow">
+    <i class="fa-solid fa-phone-volume xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<div class="top hide-large hide-medium" id="myNavbar">
+  <div class="bar black opacity hover-opacity-off center small">
+    <a href="#" class="bar-item button" style="width:25% !important">HOME</a>
+    <a href="#about" class="bar-item button" style="width:25% !important">ABOUT</a>
+    <a href="#work" class="bar-item button" style="width:25% !important">WORK</a>
+    <a href="#contact" class="bar-item button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<div class="padding-large" id="main">
+  <header class="container padding-32 center black" id="home">
+    <div id="text-container"></div>
+
+    <script>
+        const textToType = "HI !  I'm Linh";
+        const textContainer = document.getElementById("text-container");
+        let index = 0;
+
+        function typeText() {
+            textContainer.textContent = textToType.slice(0, index);
+            index++;
+
+            if (index <= textToType.length) {
+                setTimeout(typeText, 100);
+            }
+        }
+
+        typeText();
+    </script>
+    <p>Lecturers, Accountant and Coder.</p>
+    <img src="ava.jpg" alt="boy" class="image" width="500" height="500">
+  </header>
+
+  <div class="content justify text-grey padding-64" id="about">
+    <h2 class="text-light-grey">About me</h2>
+    <hr style="width:200px" class="opacity">
+    <p>My name is Nguyen Thuy Linh, female, born on May 30, 2004. I live in Hanoi and am a student at Hanoi Capital University. Currently, I am a second-year student majoring in Information Technology and work as a teaching assistant for Mathematics and English at a learning center.
+    </p>
+    <h3 class="padding-16 text-white">My Skills</h3>
+
+    <div class="progress-container">
+      <div class="progress-circle" data-percent="70"> Lecturers </div>
+      <div class="progress-circle" data-percent="85"> Marketing </div>
+      <div class="progress-circle" data-percent="65"> Code </div>
+    </div>
+
+    <p> - Participated in an art competition at the Cultural Palace of Friendship in Vietnam and Russia achieved the second prize. <br>
+      - Previously worked as a pastry chef at Susi's Cake. <i class="fa fa-birthday-cake" aria-hidden="true"></i><br>
+      - Awarded a full scholarship for the first semester of the second year. <br>
+      - Currently working as a teaching assistant for English and Mathematics. <br>
+      - Consistently achieved excellence as a student for 12 years. <br>
+      - Established a small online shop on Shopee. <br>
+      - Worked as an accountant at Ms. Hanh's center.
+    </p>
+
+            <button class="button blue hover-yellow">Hire Me</button>
+
+    <h3 class="padding-24 text-light-grey">Testimonials</h3>  
+    <img src="feedback.png" style="width:100%">
+    <br>
+    
+    <img src="feedback1.png" style="width:100%">
+    <br>
+
+    <img src="feedback2.png" style="width:100%">
+    <br>
+
+    <img src="feedback3.png" style="width:100%">
+    <br>
+  </div>
+  
+  <div class="padding-64 content" id="work">
+    <h2 class="text-light-grey">My Works</h2>
+   
+          <div class="box" style="text-align: center;" > DAY 1
+              <div class="content"  style="width: 50%; height: 50%; border: 1px solid #ccc; box-sizing: border-box; padding: 20px;>
+                  <p class="slider--item-description"><a href="https://ntlinh.000webhostapp.com/Thietkeweb/Buoi1/Bai1.HTML">Bai 1</a></p>
+                  <p class="slider--item-description"><a href="https://ntlinh.000webhostapp.com/Thietkeweb/Buoi1/Bai2-1.HTML">Bai 2.1</a></p>
+                  <p class="slider--item-description"><a href="https://ntlinh.000webhostapp.com/Thietkeweb/Buoi1/Bai2-2.HTML">Bai 2.2</a></p>
+                  <p class="slider--item-description"><a href="https://ntlinh.000webhostapp.com/Thietkeweb/Buoi1/Bai2-3.HTML">Bai 2.3</a></p>
+                  <p class="slider--item-description"><a href="https://ntlinh.000webhostapp.com/Thietkeweb/Buoi1/Bai3.HTML">Bai 3</a></p>
+                  <p class="slider--item-description"><a href="https://ntlinh.000webhostapp.com/Thietkeweb/Buoi1/Bai4.HTML">Bai 4</a></p>
+              </div>
+          </div><br>
+
+          <div class="box" style="text-align: center;" > DAY 2
+              <div class="content" style="width: 50%; height: 50%; border: 1px solid #ccc; box-sizing: border-box; padding: 20px;>
+          <p class="slider--item-description"><a href="https://ntlinh.000webhostapp.com/Thietkeweb/Buoi2/Bai1b2.html">Bai 1</a></p>
+          <p class="slider--item-description"><a href="https://ntlinh.000webhostapp.com/Thietkeweb/Buoi2/Bai2b2.html">Bai 2.1</a></p>
+          <p class="slider--item-description"><a href="https://ntlinh.000webhostapp.com/Thietkeweb/Buoi2/Bai2-2b2.html">Bai 2.2</a></p>
+          <p class="slider--item-description"><a href="https://ntlinh.000webhostapp.com/Thietkeweb/Buoi2/Bai3b2.HTML">Bai 3</a></p>
+          <p class="slider--item-description"><a href="https://ntlinh.000webhostapp.com/Thietkeweb/Buoi2/Bai4b2.HTML">Bai 4</a></p>
+          <p class="slider--item-description"><a href="https://ntlinh.000webhostapp.com/Thietkeweb/Buoi2/TestLab1%20(1).html">Test Lab</a></p>
+              </div>
+          </div><br>
+
+          <div class="box" style="text-align: center;" > DAY 3
+              <div class="content"  style="width: 50%; height: 50%; border: 1px solid #ccc; box-sizing: border-box; padding: 20px;> 
+                  <p class="slider--item-description"><a href="https://ntlinh.000webhostapp.com/Thietkeweb/Buoi%203/Bai1b3.html">Bai 1</a></p>
+                    <p class="slider--item-description"><a href="https://ntlinh.000webhostapp.com/Thietkeweb/Buoi%203/Bai2b3.html">Bai 2</a></p>
+                    <p class="slider--item-description"><a href="https://ntlinh.000webhostapp.com/Thietkeweb/Buoi%203/Bai3b3.html">Bai 3</a></p>
+                    <p class="slider--item-description"><a href="https://ntlinh.000webhostapp.com/Thietkeweb/Buoi%203/BaitapBuoi4.html">Bai 4</a></p>
+                    <p class="slider--item-description"><a href="https://ntlinh.000webhostapp.com/Thietkeweb/Buoi%203/b12-4.html">Bai 5</a></p>
+              </div>
+          </div><br>
+     
+          <div class="box" style="text-align: center;" > DAY 5
+            <div class="content"  style="width: 50%; height: 50%; border: 1px solid #ccc; box-sizing: border-box; padding: 20px;>
+                    <p class="slider--item-description"><a href="https://ntlinh.000webhostapp.com/Thietkeweb/Buoi%205/Bai1-1%20b5.html">Bai 1</a></p>
+                    <p class="slider--item-description"><a href="https://ntlinh.000webhostapp.com/Thietkeweb/Buoi%205/bai2-b5.html">Bai 2</a></p>
+                    <p class="slider--item-description"><a href="https://ntlinh.000webhostapp.com/Thietkeweb/Buoi%205/Bai%203%20b5.html">Bai 3.1</a></p>
+                    <p class="slider--item-description"><a href="https://ntlinh.000webhostapp.com/Thietkeweb/Buoi%205/Bai3-1%20b5.html">Bai 3.2</a></p>
+              </div>
+          </div><br>
+
+          <div class="box" style="text-align: center;" > DAY 6
+            <div class="content"  style="width: 50%; height: 50%; border: 1px solid #ccc; box-sizing: border-box; padding: 20px;>
+                    <p class="slider--item-description"><a href="https://ntlinh.000webhostapp.com/Thietkeweb/Buoi%206/Bai4%20b6.html">Bai 4</a></p>
+                    <p class="slider--item-description"><a href="https://ntlinh.000webhostapp.com/Thietkeweb/Buoi%206/Bai5%20b6.html">Bai 5</a></p>
+                    <p class="slider--item-description"><a href="https://ntlinh.000webhostapp.com/Thietkeweb/Buoi%206/Bai6.1%20b6.html">Bai 6.1</a></p>
+                    <p class="slider--item-description"><a href="https://ntlinh.000webhostapp.com/Thietkeweb/Buoi%206/Bai%206.2%20b6.html">Bai 6.2</a></p>
+              </div>
+          </div><br> 
+
+          <div class="box" style="text-align: center;" > DAY 7
+              <div class="content" style="width: 50%; height: 50%; border: 1px solid #ccc; box-sizing: border-box; padding: 20px;>
+                    <p class="slider--item-description"><a href="https://ntlinh.000webhostapp.com/Thietkeweb/Buoi%207/Bai%207%20b7.html">Bai 7</a></p>
+                    <p class="slider--item-description"><a href="https://ntlinh.000webhostapp.com/Thietkeweb/Buoi%207/Bai%208%20b7.html">Bai 8</a></p>
+          </div><br>
+          <div class="box" style="text-align: center;" > 30%
+              <div class="content" style="width: 50%; height: 50%; border: 1px solid #ccc; box-sizing: border-box; padding: 20px;>
+               <p class="slider--item-description"><a href="https://ntlinh.000webhostapp.com/Thietkeweb/Bai%2030%25/BAI30%25.HTML">30%</a></p>
+          </div><br>
+      </div>
+  </div>
+
+  <div class="container-fb">
+    <div class="title-fb">
+        <h2>Năm 2022- nay, Giảng viên tại trung tâm</h2>
+        <p>Trợ giảng môn Toán và Tiếng Anh cấp 1, cấp 2; đang là công việc chính</p>
+    </div>
+    <img class="image-fb" src="cf4.jpg" alt="Hình ảnh">
+  </div>
+
+  <div class="container-fb">
+    <div class="title-fb1">
+        <h2>Dự án Game Cafe cuối năm 2022</h2>
+        <p>Bài tập lớn của cả nhóm đồng thời là bài dự thi</p>
+    </div>
+    <img class="image-fb1" src="cf.png" alt="Hình ảnh">
+  </div>
+
+  <div class="container-fb">
+    <div class="title-fb">
+        <h2>Shop online</h2>
+        <p>Được mở bắt đầu từ khi dịch Covid bùng phát, là công việc đầu tiên của bản thân </p>
+    </div>
+    <img class="image-fb" src="cf3.png" alt="Hình ảnh">
+  </div>
+  
+  <div class="padding-64 content text-grey" id="contact">
+    <h2 class="text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="opacity">
+
+    <div class="section">
+      <p><i class="fa-solid fa-location-dot  xxlarge"></i> Ha Noi, Vietnam </p>
+      <p><i class="fa-solid fa-square-phone xxlarge"></i> Phone: +84 913627406</p>
+      <p><i class="fa fa-envelope fa-fw xxlarge"> </i> Email: 222001471@daihocthudo.edu.vn</p>
+    </div><br>
+    </form>
+  </div>
+  
+<footer class="content padding-64 text-grey xlarge">
+  <a href="https://www.facebook.com/profile.php?id=100005693911036"><i class="fa-brands fa-facebook-f"></i></a>
+  <a href="https://www.instagram.com/_blavkvat_/"><i class="fa-brands fa-instagram"></i></a>
+  <a href="https://www.youtube.com/@zuyzuyhjhj"><i class="fa-brands fa-youtube"></i></a>
+  <i class="fa-solid fa-phone-volume"></i><br>
+ <a class="button round-xxlarge small light-grey"target="_blank">Start now</a> 
+</footer>
+</div>
+</body>
+</html>
